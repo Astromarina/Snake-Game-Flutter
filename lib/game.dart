@@ -2,7 +2,7 @@ import 'dart:math';
 import 'package:share/share.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:assets_audio_player/assets_audio_player.dart';
+//import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './GameSettings.dart';
 import 'dart:core';
@@ -17,7 +17,7 @@ final double BOARD_WIDTH = 360;
 final double BLOCK_SIZE = 20;
 final double INIT_HEIGHT = 60;
 final double INIT_WIDTH = 40;
-final assetsAudioPlayer = AssetsAudioPlayer();
+//final assetsAudioPlayer = AssetsAudioPlayer();
 
 final TIMEOUT = 500;
 int score = 0;
@@ -231,7 +231,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void dosomething() async {
     if (GameSettings.sounds == true) {
-      assetsAudioPlayer.open(Audio("assets/1.mp3"));
+      //assetsAudioPlayer.open(Audio("assets/1.mp3"));
     }
     int type = CakePos.type;
     score += CakePos.scores[type];

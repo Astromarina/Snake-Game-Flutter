@@ -4,8 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:liquid_button/liquid_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './highscores.dart';
-import 'package:assets_audio_player/assets_audio_player.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+//import 'package:assets_audio_player/assets_audio_player.dart';
 import './game.dart';
 import './GameSettings.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
@@ -45,7 +44,7 @@ class _SettingScreenState extends State<SettingScreen> {
                         GameSettings.sounds = !GameSettings.sounds;
                       });
                       if (GameSettings.sounds == true) {
-                        assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                        //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                       }
                     },
                     icon: Icon(Icons.speaker_group),
@@ -75,7 +74,7 @@ class _SettingScreenState extends State<SettingScreen> {
                               textColor: Colors.white,
                               onPressed: () async {
                                 if (GameSettings.sounds == true) {
-                                  assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                                  //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                                 }
                                 SharedPreferences prefs =
                                     await SharedPreferences.getInstance();
@@ -93,7 +92,7 @@ class _SettingScreenState extends State<SettingScreen> {
                               textColor: Colors.white,
                               onPressed: () async {
                                 if (GameSettings.sounds == true) {
-                                  assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                                  //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                                 }
                                 SharedPreferences prefs =
                                     await SharedPreferences.getInstance();
@@ -116,7 +115,7 @@ class _SettingScreenState extends State<SettingScreen> {
                               textColor: Colors.white,
                               onPressed: () async {
                                 if (GameSettings.sounds == true) {
-                                  assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                                  //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                                 }
                                 SharedPreferences prefs =
                                     await SharedPreferences.getInstance();
@@ -134,7 +133,7 @@ class _SettingScreenState extends State<SettingScreen> {
                               textColor: Colors.white,
                               onPressed: () async {
                                 if (GameSettings.sounds == true) {
-                                  assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                                  //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                                 }
                                 SharedPreferences prefs =
                                     await SharedPreferences.getInstance();
@@ -171,7 +170,7 @@ class _SettingScreenState extends State<SettingScreen> {
                               textColor: Colors.white,
                               onPressed: () async {
                                 if (GameSettings.sounds == true) {
-                                  assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                                  //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                                 }
 
                                 showDialog(
@@ -217,7 +216,7 @@ class _SettingScreenState extends State<SettingScreen> {
                               textColor: Colors.white,
                               onPressed: () async {
                                 if (GameSettings.sounds == true) {
-                                  assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                                  //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                                 }
 
                                 showDialog(
@@ -268,7 +267,7 @@ class _SettingScreenState extends State<SettingScreen> {
                               textColor: Colors.white,
                               onPressed: () async {
                                 if (GameSettings.sounds == true) {
-                                  assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                                  //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                                 }
 
                                 showDialog(
@@ -314,7 +313,7 @@ class _SettingScreenState extends State<SettingScreen> {
                               textColor: Colors.white,
                               onPressed: () async {
                                 if (GameSettings.sounds == true) {
-                                  assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                                  //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                                 }
 
                                 showDialog(

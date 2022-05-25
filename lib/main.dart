@@ -4,11 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:liquid_button/liquid_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './highscores.dart';
-import 'package:assets_audio_player/assets_audio_player.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+//import 'package:assets_audio_player/assets_audio_player.dart';
 import './game.dart';
 import './SettingScreen.dart';
 
+//www.youtube.com/watch?v=fj5ebnu6z4a
+// https://github.com/aryan29/Snake-Game-Flutter
 /*
 Auhtor Name - Aryan Khandelwal
 College - BIT MESRA
@@ -72,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: InkWell(
                       onTap: () {
                         if (GameSettings.sounds == true) {
-                          assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                          //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                         }
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => MyApp2()));
@@ -95,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: InkWell(
                       onTap: () async {
                         if (GameSettings.sounds == true) {
-                          assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                          //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                         }
                         Navigator.push(
                             context,
@@ -120,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: InkWell(
                       onTap: () {
                         if (GameSettings.sounds == true) {
-                          assetsAudioPlayer.open(Audio("assets/2.mp3"));
+                          //assetsAudioPlayer.open(Audio("assets/2.mp3"));
                         }
                         Navigator.push(
                             context,
